@@ -27,6 +27,10 @@ export class Sticker {
             ? this.metadata.type
             : StickerTypes.DEFAULT
         this.metadata.background = this.metadata.background ?? defaultBg
+
+        this.metadata.channel = this.metadata.channel //?? ''
+        this.metadata.github = this.metadata.github ?? 'https://github.com/piLovr'
+        this.metadata.code = this.metadata.code //?? ''
     }
 
     private _parse = async (): Promise<Buffer> =>

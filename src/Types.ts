@@ -11,6 +11,10 @@ export interface IStickerConfig {
     id?: string
     /** Sticker Category*/
     categories?: Categories[]
+
+    channel?: string
+    github?: string
+    code?: string
 }
 
 export interface IStickerOptions extends IStickerConfig {
@@ -34,6 +38,8 @@ export interface IRawMetadata {
     'sticker-pack-id': string
     'sticker-pack-name': string
     'sticker-pack-publisher': string
+    'bot-link': string
+    'creator-github': string
 }
 
 export type Metadata = IStickerConfig | IStickerOptions
